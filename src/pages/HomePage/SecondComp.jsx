@@ -1,6 +1,4 @@
-import React, {useEffect} from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react'
 
 
 const SecondComp = () => {
@@ -10,12 +8,6 @@ const SecondComp = () => {
   const divStyle1 = {
     fontFamily: 'Barlow, sans-serif'
   }
-  useEffect(()=> {
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: false, // Only animate once
-    });
-  }, [])
   return (
     <div>
         <div className='relative px-9 z-10 w-full transform translate-y-5 bg-[#080a16] from-850/90 to-900 py-10 backdrop-blur-sm'>

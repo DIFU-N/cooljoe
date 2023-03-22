@@ -7,7 +7,7 @@ const NavBar = () => {
     fontFamily: 'Barlow, sans-serif'
   }
   return (
-    <div className="bg-[#05070f] text-base px-9 w-full">
+    <div className="bg-[#05070f] fixed text-base px-9 w-full backdrop-blur z-50">
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
       </style>

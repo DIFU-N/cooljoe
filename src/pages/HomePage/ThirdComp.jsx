@@ -1,6 +1,4 @@
-import React, {useEffect} from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react'
 import ArrowButton from '../../hooks/ArrowButton';
 
 const ThirdComp = () => {
@@ -10,12 +8,6 @@ const ThirdComp = () => {
     const divStyle1 = {
         fontFamily: 'Barlow, sans-serif'
     }
-    useEffect(()=> {
-        AOS.init({
-          duration: 1000, // Animation duration in milliseconds
-          once: false, // Only animate once
-        });
-      }, [])
     return (
         <div className='relative top-6 px-9 bg-[#05070f]'>
             <div className='px-4 pt-20 pb-[77px] grid gap-y-[125px]'>
