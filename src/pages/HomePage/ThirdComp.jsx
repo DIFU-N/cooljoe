@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import ArrowButton from '../../hooks/ArrowButton';
+import ArrowButton from '../../components/ArrowButton';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

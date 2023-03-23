@@ -1,5 +1,5 @@
 import React from 'react';
-import ArrowButton from '../../hooks/ArrowButton';
+import ArrowButton from '../../components/ArrowButton';
 
 const IntroComp = () => {
     const divStyle = {

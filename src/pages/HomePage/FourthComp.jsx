@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 const FourthComp = () => {
     useEffect(()=> {
       AOS.init({
-        duration: 100, // Animation duration in milliseconds
+        duration: 500, // Animation duration in milliseconds
         once: false, // Only animate once
       });
     }, [])

@@ -7,13 +7,16 @@ const NavBar = () => {
     fontFamily: 'Barlow, sans-serif'
   }
   return (
-    <div className="bg-[#05070f] fixed text-base px-9 w-full backdrop-blur z-50">
+    <div className="bg-[#070a14] bg-opacity-80 fixed text-base px-9 w-full backdrop-blur z-50">
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
       </style>
       <nav className=" text-[#7b7e8e] grid grid-cols-[10.5%_69.5%_20%] gap-x-[34px] overflow-hidden" style={divStyle}>
           <div className="flex ml-4">
-            <NavLink className={'w-full my-1 first-letter:text-3xl first-letter:text-[#f3c351] text-xl text-green-900'}>O STRYDAa</NavLink>
+          <img src="src\assets\images\svg\stryda-logo-main-white.svg" 
+              className='w-auto h-14'
+              alt=""/>
+            {/* <NavLink className={'w-full my-1 first-letter:text-3xl first-letter:text-[#f3c351] text-xl text-green-900'}>O STRYDAa</NavLink> */}
           </div>
           <div className="flex justify-center mt-[5px] text-[16px] w-full">
             <div className="flex">
