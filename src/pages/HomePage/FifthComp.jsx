@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 const FifthComp = () => {
     const divStyle = {
@@ -48,12 +48,12 @@ const FifthComp = () => {
                 <div className='flex flex-1 px-8 gap-4'>
                     {images.map((image) => (
                         <a href="" key={image.id} className='active:opacity-50'>
-                            <div className='w-36'>
+                            <div className='w-36 aos-init'>
                                 <img 
                                 src={image.src} 
                                 // className='rounded-lg'
                                 // className={`rounded-lg ${hoveredIndex !== image.id ? 'brightness-50' : ''}`} 
-                                className={`rounded-lg aos-animate aos-init ${
+                                className={`rounded-lg aos-animate ${
                                     hoveredIndex !== -1 && hoveredIndex !== image.id
                                       ? "brightness-50"
                                       : ""

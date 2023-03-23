@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const SecondComp = () => {
   const divStyle = {
     fontFamily: 'Bebas Neue, cursive'
@@ -13,7 +12,7 @@ const SecondComp = () => {
         <div className='relative px-9 z-10 w-full transform translate-y-5 bg-[#080a16] from-850/90 to-900 py-10 backdrop-blur-sm'>
         {/* // 'w-[100%] border relative top-1/3 transform -translate-y-[10%] bg-[#080a16]'> */}
           <div className='px-4'>
-            <div className='flex flex-row gap-12 overflow-x-auto items-start overflow-hidden'>
+            <div className='flex flex-row gap-12 aos-init aos-animate overflow-x-auto items-start overflow-hidden'>
               <div className='flex flex-col w-full whitespace-nowrap aos-init'
                 data-aos="fade-up"
                 data-aos-duration="250"

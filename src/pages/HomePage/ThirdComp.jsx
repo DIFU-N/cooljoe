@@ -10,7 +10,7 @@ const ThirdComp = () => {
     }
     return (
         <div className='relative top-6 px-9 bg-[#05070f]'>
-            <div className='px-4 pt-20 pb-[77px] grid gap-y-[125px]'>
+            <div className='px-4 pt-20 aos-init aos-animate pb-[77px] grid gap-y-[125px]'>
                 <div className='w-full flex flex-row gap-16'>
                     <div className='w-[80%] flex items-center'>
                         <div className='flex flex-col py-8 gap-8'
