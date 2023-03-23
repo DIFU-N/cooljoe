@@ -3,6 +3,7 @@ import FifthComp from "./FifthComp";
 import FourthComp from "./FourthComp";
 import IntroComp from "./IntroComp";
 import SecondComp from "./SecondComp";
+import SixthComp from "./SixthComp";
 import ThirdComp from "./ThirdComp";
 
 const HomePage = () => {
@@ -13,6 +14,7 @@ const HomePage = () => {
       <ThirdComp />
       <FourthComp />
       <FifthComp />
+      <SixthComp />
     </div>
   );
 };
