@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/Footer";
 import FifthComp from "./FifthComp";
 import FourthComp from "./FourthComp";
 import IntroComp from "./IntroComp";
@@ -15,6 +16,7 @@ const HomePage = () => {
       <FourthComp />
       <FifthComp />
       <SixthComp />
+      <Footer />
     </div>
   );
 };

@@ -1,7 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import ArrowButton from '../../hooks/ArrowButton';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ThirdComp = () => {
+    useEffect(()=> {
+      AOS.init({
+        duration: 500, // Animation duration in milliseconds
+        once: false, // Only animate once
+      });
+    }, [])
     const divStyle = {
         fontFamily: 'Bebas Neue, cursive'
     }
@@ -15,7 +23,7 @@ const ThirdComp = () => {
                     <div className='w-[80%] flex items-center'>
                         <div className='flex flex-col py-8 gap-8'
                             data-aos="fade-up"
-                            data-aos-duration="250"
+                            data-aos-duration="400"
                             data-aos-once="false"
                         >
                             <div className='flex flex-col'>
@@ -29,7 +37,7 @@ const ThirdComp = () => {
                     </div>
                     <div className='w-[100%]'
                         data-aos="fade"
-                        data-aos-duration="250"
+                        data-aos-duration="400"
                         data-aos-once="false"
                     >
                     <img alt="Make your GG more rewarding" src="src\assets\images\GG_s.webp"/>
@@ -86,7 +94,7 @@ const ThirdComp = () => {
                 <div className='w-full flex flex-row gap-16'>
                     <div className='w-[100%]'
                         data-aos="fade"
-                        data-aos-duration="250"
+                        data-aos-duration="400"
                         data-aos-once="false"
                     >
                         <img alt="Make your GG more rewarding" src="src\assets\images\Clan.webp"/>
@@ -94,7 +102,7 @@ const ThirdComp = () => {
                     <div className='w-[80%] flex items-center'>
                         <div className='flex flex-col py-8 gap-8'
                             data-aos="fade-up"
-                            data-aos-duration="250"
+                            data-aos-duration="400"
                             data-aos-once="false"
                         >
                             <div className='flex flex-col'>

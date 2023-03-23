@@ -1,6 +1,15 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const FifthComp = () => {
+    useEffect(()=> {
+      AOS.init({
+        duration: 100, // Animation duration in milliseconds
+        once: false, // Only animate once
+      });
+    }, [])
     const divStyle = {
         fontFamily: 'Bebas Neue, cursive'
     }
