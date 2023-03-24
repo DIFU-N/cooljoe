@@ -43,15 +43,15 @@ const NavBar = () => {
                 "px-2 py-1 group-hover:text-[#f3c351] bg-opacity-80 group-focus:text-[#f3c351] w-screen")}>Home</div>
               </NavLink>
               <NavLink to="/dash" className={'flex items-center font-semibold group relative'}>
-                <div className={(location.pathname === '/dash' ? "px-[10px] justify-center py-1 text-[#f3c351] border w-screen bg-[#171b2d]" : 
+                <div className={(location.pathname === '/dash' ? "px-[10px] justify-center py-1 text-[#f3c351] w-screen bg-[#171b2d]" : 
                 "px-2 py-1 group-hover:text-[#f3c351] bg-opacity-80 group-focus:text-[#f3c351] w-screen")}>How It Works</div>
               </NavLink>
               <NavLink to="/guedes" className={'flex items-center font-semibold group relative'}>
-                <div className={(location.pathname === '/guedes' ? "px-[10px] justify-center py-1 text-[#f3c351] border w-screen bg-[#171b2d]" : 
+                <div className={(location.pathname === '/guedes' ? "px-[10px] justify-center py-1 text-[#f3c351] w-screen bg-[#171b2d]" : 
                 "px-2 py-1 group-hover:text-[#f3c351] bg-opacity-80 group-focus:text-[#f3c351] w-screen")}>Guides</div>
               </NavLink>
               <NavLink to="/news" className={'flex items-center font-semibold group relative'}>
-                <div className={(location.pathname === '/news' ? "px-[10px] justify-center py-1 text-[#f3c351] border w-screen bg-[#171b2d]" : 
+                <div className={(location.pathname === '/news' ? "px-[10px] justify-center py-1 text-[#f3c351] w-screen bg-[#171b2d]" : 
                 "px-2 py-1 group-hover:text-[#f3c351] bg-opacity-80 group-focus:text-[#f3c351] w-screen")}>News</div>
               </NavLink>
             </div>
