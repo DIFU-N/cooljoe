@@ -17,7 +17,7 @@ const NavBar = () => {
     document.getElementById('navItems').classList.add('-translate-y-full');
   }  
   return (
-    <div className="bg-[#070a14] bg-opacity-80 fixed text-base py-2 lg:pt-1 px-2 md:px-9 w-screen backdrop-blur">
+    <div className="z-50 bg-[#070a14] bg-opacity-80 fixed text-base py-2 lg:pt-1 px-2 md:px-9 w-screen backdrop-blur">
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
       </style>
