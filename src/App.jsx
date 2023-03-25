@@ -7,10 +7,13 @@ import 'aos/dist/aos.css';
 
 function App() {
   useEffect(()=> {
-    AOS.init({
-      duration: 600, // Animation duration in milliseconds
-      once: false, // Only animate once
-    });
+    if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+      // AOS library initialization code here
+      AOS.init({
+        duration: 400, // Animation duration in milliseconds
+        once: false, // Only animate once
+      });
+    }
   }, [])
   return (
     <Router>
