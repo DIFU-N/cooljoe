@@ -17,9 +17,9 @@ const ThirdComp = () => {
         fontFamily: 'Barlow, sans-serif'
     }
     return (
-        <div className='relative top-6 px-9 bg-[#05070f]'>
-            <div className='px-4 pt-20 aos-init aos-animate pb-[77px] grid gap-y-[125px]'>
-                <div className='w-full flex flex-row gap-16'>
+        <div className='relative top-6 px-2 lg:px-9 bg-[#05070f]'>
+            <div className='px-2 lg:px-4 pt-20 aos-init aos-animate pb-[77px] grid gap-y-[125px]'>
+                <div className='w-full flex border flex-col-reverse lg:flex-row gap-16'>
                     <div className='w-[80%] flex items-center'>
                         <div className='flex flex-col py-8 gap-8'
                             data-aos="fade-up"
