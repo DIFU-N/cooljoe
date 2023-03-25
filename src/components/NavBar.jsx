@@ -9,28 +9,28 @@ const NavBar = () => {
     fontFamily: 'Barlow, sans-serif'
   }
   const showNavItems = () => {
-    document.getElementById('navItems').classList.remove('hidden');
-    document.getElementById('navItems').classList.add('block');
+    document.getElementById('navItems').classList.remove('-translate-y-full');
+    document.getElementById('navItems').classList.add('translate-y-0');
   }
   const hideNavItems = () => {
-    document.getElementById('navItems').classList.remove('block');
-    document.getElementById('navItems').classList.add('hidden');
+    document.getElementById('navItems').classList.remove('translate-y-0');
+    document.getElementById('navItems').classList.add('-translate-y-full');
   }  
   return (
-    <div className="bg-[#070a14] bg-opacity-80 fixed text-base pt-1 px-2 md:px-9 w-screen backdrop-blur z-50">
+    <div className="bg-[#070a14] bg-opacity-80 fixed text-base py-2 lg:pt-1 px-2 md:px-9 w-screen backdrop-blur">
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
       </style>
       <nav className="text-[#7b7e8e] grid grid-cols-2 gap-1 lg:grid-cols-[10.5%_69.5%_20%] lg:gap-x-[34px] overflow-hidden" style={divStyle}>
           <div className="flex md:ml-4">
           <img src="src\assets\images\svg\stryda-logo-main-white.svg" 
-              className='w-auto h-[18px] lg:h-14'
+              className='w-auto h-8 lg:h-14'
               alt=""/>
             {/* <NavLink className={'w-full my-1 first-letter:text-3xl first-letter:text-[#f3c351] text-xl text-green-900'}>O STRYDAa</NavLink> */}
           </div>
-          <div id="navItems" className="z-50 bg-opacity-[0.96] hidden left-0 top-0 bg-[#050710] py-7 lg:hidden absolute text-[14px]">
+          <div id="navItems" className="z-50 transition duration-200 pt-8 ease-in-out -translate-y-full bg-opacity-[0.96]  left-0 top-0 bg-[#050710] py-7 lg:hidden absolute text-[14px]">
               <button title="Show navigation" type="button" onClick={hideNavItems} 
-                className="button button-tertiary button-md bg-[#f3c351] absolute right-0 z-50 top-0 rounded-full py-[5px] px-[12px]">
+                className="button button-tertiary button-md mt-4 bg-[#f3c351] absolute right-0 z-50 top-0 rounded-full py-[5px] px-[12px]">
                 <span className="icon icon-menu-8">
                   <FontAwesomeIcon icon={faClose} size="sm" color="black" />
                 </span>
@@ -88,15 +88,15 @@ const NavBar = () => {
               </NavLink>
             </div>
           </div>
-          <div className="w-full gap-1 flex items-center">  
-            <div className="py-1 md:py-[10px] flex gap-x-1">
-              <button className="rounded-2xl h-4 md:h-auto flex justify-center items-center md:py-1 border-[1.5px] text-[#a5a7b5] text-[7px] md:text-sm border-[#a5a7b5] hover:bg-slate-800 w-10 md:w-16">LOG IN</button>
-              <button className="rounded-2xl h-4 md:h-auto flex justify-center items-center w-12 md:w-24 md:p-1 bg-[#d5ab48] hover:bg-[#f3c351] text-[7px] md:text-sm text-[#1b1b25]">SIGN UP</button>
+          <div className="w-full gap-1 flex justify-end lg:justify-start items-center">  
+            <div className="md:py-[10px] flex gap-x-1">
+              <button className="rounded-2xl h-8 md:h-auto w-[70px] font-semibold lg:font-normal flex justify-center items-center md:py-1 border-[1.5px] text-[#a5a7b5] text-sm md:text-sm border-[#a5a7b5] hover:bg-slate-800">LOG IN</button>
+              <button className="rounded-2xl h-auto md:h-auto flex justify-center items-center font-semibold lg:font-normal w-24 md:p-1 bg-[#d5ab48] hover:bg-[#f3c351] text-sm text-[#1b1b25]">SIGN UP</button>
             </div>
             <button title="Show navigation" type="button" onClick={showNavItems} 
-            className="button button-tertiary button-sm rounded-full lg:hidden">
+            className="button button-tertiary button-sm bg-[#171b2d] py-1 px-2 rounded-full lg:hidden">
               <span className="icon icon-menu-8">
-                <FontAwesomeIcon icon={faBars} size="sm" />
+                <FontAwesomeIcon icon={faBars} size="1x" />
               </span>
             </button>
           </div>
