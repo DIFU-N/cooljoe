@@ -13,10 +13,10 @@ const FourthComp = () => {
         fontFamily: 'Bebas Neue, cursive'
     }
     return (
-        <div className='relative py-24 top-6 w-full bg-[#e1e2e7] border-t-4 border-[#f3c351]'>
+        <div className='relative my-0 md:my-40 lg:my-0 py-24 top-6 w-full bg-[#e1e2e7] border-t-4 border-[#f3c351]'>
             <div className='flex flex-col gap-y-8 items-center justify-center'>
                 <span className='text-6xl font-bold' style={divStyle}>TRUSTED BY</span>
-                <div className='flex flex-col gap-y-12 lg:flex-row lg:gap-x-12 aos-init aos-animate'>
+                <div className='flex flex-col gap-y-12 md:flex-row md:gap-x-12 aos-init aos-animate'>
                     <img src="src\assets\images\svg\partner-overwolf.svg" className='w-auto h-16' alt="wolf" 
                         data-aos="fade-left"
                         data-aos-duration="250"
