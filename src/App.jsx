@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage/HomePage"
 import Layout from "./components/Layout"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import HowItWorks from './pages/How It Works/HowItWorks';
 
 function App() {
   useEffect(()=> {
@@ -20,6 +21,7 @@ function App() {
       <Layout>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
+          <Route exact path="//how-it-works" element={<HowItWorks />} />
         </Routes>
       </Layout>
     </Router>
