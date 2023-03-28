@@ -4,20 +4,6 @@ import 'aos/dist/aos.css';
 
 
 const SecondComp = () => {
-  // useEffect(()=> {
-  //   if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
-  //     // AOS library initialization code here
-  //     AOS.init({
-  //       duration: 30000, // Animation duration in milliseconds
-  //       once: false, // Only animate once
-  //     });
-  //   }
-    
-  //   AOS.init({
-  //     duration: 30000, // Animation duration in milliseconds
-  //     once: false, // Only animate once
-  //   });
-  // }, [])
   const divStyle = {
     fontFamily: 'Bebas Neue, cursive'
   }
@@ -26,10 +12,10 @@ const SecondComp = () => {
   }
   return (
     <div>
-        <div className='relative scrollbar-hidden overflow-hidden top-5 lg:bg-opacity-100 bg-opacity-70 px-2 lg:px-9 z-10 w-full transform translate-y-5 lg:bg-[#080a16] bg-[#05060e] from-850/90 to-900 py-8 lg:py-10 backdrop-blur-sm'>
+        <div className='relative scrollbar-hidden overflow-hidden top-5 lg:bg-opacity-100 bg-opacity-70 px-2 lg:px-9 z-10 w-full transform translate-y-5 lg:bg-[#080a16] bg-[#05060e] from-850/90 to-900 py-8 md:py-0 lg:py-10 backdrop-blur-sm'>
         {/* // 'w-[100%] border relative top-1/3 transform -translate-y-[10%] bg-[#080a16]'> */}
           <div className='px-4'>
-            <div className='flex flex-row py-5 lg:py-0 gap-10 lg:gap-12 overflow-x-auto items-start overflow-hidden'>
+            <div className='flex flex-row py-5 md:py-0 lg:py-0 gap-10 lg:gap-12 overflow-x-auto scrollbar-hide items-start overflow-hidden'>
               <div className='grid relative space-y-5 lg:flex lg:flex-col aos-init aos-animate w-full whitespace-nowrap aos-init'
                 data-aos="fade-up"
                 data-aos-duration="500ms"
