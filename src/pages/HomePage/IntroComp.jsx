@@ -12,7 +12,7 @@ const IntroComp = () => {
         fontFamily: 'Barlow, sans-serif'
     }
     return (
-        <div className='flex w-full z-10 relative md:grid md:grid-cols-2 pt-32 md:pt-36 md:mx-9 mx-auto overflow-hidden bg-[#05070f] text-white pb-40'>
+        <div className='flex w-full z-10 relative md:grid md:grid-cols-2 pt-32 md:pt-36 md:px-9 mx-auto overflow-hidden bg-[#05070f] text-white pb-40'>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Yantramanav&family=Six+Caps&display=swap');
             </style>

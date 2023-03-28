@@ -21,31 +21,37 @@ const FourthComp = () => {
                         data-aos="fade-left"
                         data-aos-duration="250"
                         data-aos-once="false"
+                        data-aos-delay="200"
                     />
                     <img src="src\assets\images\svg\partner-riot.svg" className='w-auto h-16' alt="riot" 
                         data-aos="fade-left"
                         data-aos-duration="500"
                         data-aos-once="false"
+                        data-aos-delay="200"
                     />
                     <img src="src\assets\images\svg\partner-krafton.svg" className='w-auto h-16' alt="krafton" 
                         data-aos="fade-left"
                         data-aos-duration="750"
                         data-aos-once="false"
+                        data-aos-delay="200"
                     />
                     <img src="src\assets\images\svg\partner-hyperx.svg" className='w-auto h-16' alt="hyperx" 
                         data-aos="fade-left"
                         data-aos-duration="1000"
                         data-aos-once="false"
+                        data-aos-delay="200"
                     />
                     <img src="src\assets\images\svg\partner-visa.svg" className='w-auto h-16' alt="visa" 
                         data-aos="fade-left"
                         data-aos-duration="1250"
                         data-aos-once="false"
+                        data-aos-delay="200"
                     />
                     <img src="src\assets\images\svg\partner-lenovo.svg" className='w-auto h-16' alt="lenovo" 
                         data-aos="fade-left"
                         data-aos-duration="1500"
                         data-aos-once="false"
+                        data-aos-delay="200"
                     />
                 </div>
             </div>

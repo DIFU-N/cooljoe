@@ -38,23 +38,23 @@ const FifthComp = () => {
         { id: 7, src: 'src/assets/images/jpeg/Game_cover_Rocket_League.jpg', alt: 'Rocket League' },
     ];
     return (
-        <div className='relative bg-[#05070f] pt-9 px-9'>
-            <div className='grid grid-cols-2 px-4'>
+        <div className='relative bg-[#05070f] pt-9 lg:px-9 px-4'>
+            <div className='grid items-center text-center lg:text-left lg:grid-cols-2 px-4'>
                 <div className='flex flex-col pt-24 gap-y-8'>
                     <span className='text-white text-7xl' style={divStyle}>JOIN THE COMMUNITY</span>
-                    <span className='text-[#a5a7b5] text-lg pr-[24px]' style={divStyle1}>Join our community of gamers on 
-                        <a href=''>Discord</a> for the latest news and discussions. 
+                    <span className='text-[#a5a7b5] text-lg lg:pr-[24px]' style={divStyle1}>Join our community of gamers on 
+                        <a href=''> Discord</a> for the latest news and discussions. 
                         If you have questions about Stryda, check out the 
-                        <a href=''>How It Works</a> page or contact <a href=''>customer support.</a>
+                        <a href=''> How It Works</a> page or contact <a href=''> customer support.</a>
                     </span>
                 </div>
-                <div>
+                <div className='hidden lg:block'>
                     <img src="src\assets\images\communitymanager.webp" alt="" />
                 </div>
             </div>
-            <div className='py-20 flex flex-col items-center gap-y-8 justify-center'>
+            <div className='py-20 flex relative overflow-hidden overflow-x-auto scrollbar-hidden flex-col text-center lg:text-left items-center gap-y-8 justify-center'>
                 <span className='text-7xl text-white' style={divStyle}>SUPPORTED GAMES</span>
-                <div className='flex flex-1 px-8 gap-4'>
+                <div className='flex overflow-x-auto w-full lg:w-auto overflow-hidden items-start lg:items-center flex-1 lg:flex-1 px-8 gap-4'>
                     {images.map((image) => (
                         <a href="" key={image.id} className='active:opacity-50'>
                             <div className='w-36 aos-init'>
