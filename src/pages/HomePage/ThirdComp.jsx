@@ -19,7 +19,7 @@ const ThirdComp = () => {
     return (
         <div className='relative top-6 md:top-48 lg:top-6 px-2 lg:px-9 bg-[#05070f]'>
             <div className='mx-2 md:mx-4 pt-20 md:pt-0 lg:pt-20 aos-init aos-animate pb-[77px] grid gap-y-[125px]'>
-                <div className='w-full flex flex-col-reverse md:flex-row gap-16 md:gap-12 lg:gap-16'>
+                <div className='w-full flex flex-col-reverse md:flex-row gap-16 md:gap-12 border-b border-b-[#3d3e44] lg:gap-16'>
                     <div className='w-full lg:w-[80%] flex lg:items-center'>
                         <div className='flex flex-col py-8 items-center gap-8'
                             data-aos="fade-up"
@@ -47,7 +47,7 @@ const ThirdComp = () => {
                     <img alt="Make your GG more rewarding" src="src\assets\images\GG_s.webp" className='mt-0 md:mt-20 lg:mt-0'/>
                     </div>
                 </div>
-                <div className='w-full flex flex-col md:flex-row gap-16 md:gap-12 lg:gap-16'>
+                <div className='w-full flex flex-col md:flex-row gap-16 md:gap-12 lg:gap-16 border-b border-b-[#3d3e44]'>
                     <div className='w-[100%]'
                         data-aos="fade"
                         data-aos-duration="500ms"
@@ -74,7 +74,7 @@ const ThirdComp = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full flex flex-col-reverse md:flex-row gap-16 md:gap-12 lg:gap-16'>
+                <div className='w-full flex flex-col-reverse md:flex-row gap-16 md:gap-12 lg:gap-16 border-b border-b-[#3d3e44]'>
                     <div className='w-full lg:w-[80%] flex items-center'>
                         <div className='flex text-center items-center md:items-start lg:items-center flex-col py-8 gap-8'
                             data-aos="fade-up"
@@ -100,7 +100,7 @@ const ThirdComp = () => {
                     <img alt="Make your GG more rewarding" src="src\assets\images\Tracker.webp"/>
                     </div>
                 </div>
-                <div className='w-full flex flex-col md:flex-row gap-16 md:gap-12 lg:gap-16'>
+                <div className='w-full flex flex-col md:flex-row gap-16 md:gap-12 lg:gap-16 '>
                     <div className='w-[100%]'
                         data-aos="fade"
                         data-aos-duration="400"

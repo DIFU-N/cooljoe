@@ -30,14 +30,14 @@ const NavBar = () => {
           </div>
           <div id="navItems" className="z-50 transition duration-200 pt-8 ease-in-out -translate-y-full bg-opacity-[0.96]  left-0 top-0 bg-[#050710] py-7 lg:hidden absolute text-[14px]">
               <button title="Show navigation" type="button" onClick={hideNavItems} 
-                className="button button-tertiary button-md mt-4 bg-[#f3c351] absolute right-0 z-50 top-0 rounded-full py-[5px] px-[12px]">
+                className="button button-tertiary group button-md mt-4 bg-[#f3c351] absolute right-0 md:right-10 z-50 top-0 rounded-full py-[5px] px-[12px]">
                 <span className="icon icon-menu-8">
-                  <FontAwesomeIcon icon={faClose} size="sm" color="black" />
+                  <FontAwesomeIcon icon={faClose} size="sm" color="black" className="group-hover:transition group-hover:duration-200 group-hover:rotate-180" />
                 </span>
               </button>
             {/* <div className="bg-[#f3c351] absolute right-0 z-50 top-0 rounded-full py-[5px] px-[12px]">
             </div> */}
-            <div className="lg:flex-row text-[12px] flex flex-col justify-start items-start">
+            <div className="lg:flex-row text-[12px] md:text-base flex flex-col justify-start items-start">
               <NavLink to="/" className={'flex items-center font-semibold group relative'}>
                 <div className={(location.pathname === '/' ? "px-[10px] justify-center py-1 text-[#f3c351] w-screen bg-[#171b2d]" : 
                 "px-2 py-1 group-hover:text-[#f3c351] bg-opacity-80 group-focus:text-[#f3c351] w-screen")}>Home</div>
