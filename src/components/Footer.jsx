@@ -8,8 +8,8 @@ const Footer = () => {
   }
   return (
     <div>
-        <footer className='lg:py-20 w-full py-7 px-5 lg:px-20 text-white' style={divStyle}>
-          <div className='w-full flex flex-col lg:flex-row lg:justify-between'>
+        <footer className='lg:py-20 md:pb-20 w-full py-7 px-5 lg:px-20 text-white' style={divStyle}>
+          <div className='w-full flex flex-col md:flex-row md:justify-between'>
             <div className='flex flex-col gap-y-7 items-start'>
               <img src="src\assets\images\svg\stryda-logo-main-white.svg" 
               className='w-auto h-9 lg:h-10'
@@ -29,13 +29,13 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <ul className='grid grid-flow-row mt-12 gap-y-12 lg:mt-0 lg:auto-cols-max  lg:grid-flow-col gap-x-16'>
+              <ul className='grid grid-flow-row mt-12 gap-y-12 md:mt-0 md:auto-cols-max  md:grid-flow-col gap-x-16'>
                 <li className='flex flex-col gap-y-4'>
-                  <strong className='flex gap-x-[2px] lg:gap-x-1  text-white text-[16px] lg:text-[15px]'>
+                  <strong className='flex gap-x-[2px] lg:gap-x-1  text-white text-[16px] md:text-[15px]'>
                     <span className='bg-[#f3c351] block flex-shrink-0 mr-2 w-1 h-6 bg-main'></span>
                     Company
                   </strong>
-                  <ul className='grid gap-y-3 text-[15px] lg:text-sm text-[#828387] text-left pl-3 items-center'>
+                  <ul className='grid gap-y-3 text-[15px] md:text-sm text-[#828387] text-left pl-3 items-center'>
                     <li>
                       <a href="">Jobs</a>
                     </li>
@@ -45,11 +45,11 @@ const Footer = () => {
                   </ul>
                 </li>
                 <li className='flex flex-col gap-y-4'>
-                  <strong className='flex gap-x-[2px] lg:gap-x-1 text-white text-[16px] lg:text-[15px]'>
+                  <strong className='flex gap-x-[2px] lg:gap-x-1 text-white text-[16px] md:text-[15px]'>
                     <span className='bg-[#f3c351] block flex-shrink-0 mr-2 w-1 h-6 bg-main'></span>
                     Further Information
                   </strong>
-                  <ul className='grid gap-y-3 text-[15px] lg:text-sm text-[#828387] pl-3 items-center text-left'>
+                  <ul className='grid gap-y-3 text-[15px] md:text-sm text-[#828387] pl-3 items-center text-left'>
                     <li>
                       <a href="">Terms of service</a>
                     </li>
@@ -68,11 +68,11 @@ const Footer = () => {
                   </ul>
                 </li>
                 <li className='flex flex-col gap-y-4'>
-                  <strong className='flex gap-x-[2px] lg:gap-x-1 text-white text-[16px] lg:text-[15px]'>
+                  <strong className='flex gap-x-[2px] lg:gap-x-1 text-white text-[16px] md:text-[15px]'>
                     <span className='bg-[#f3c351] block flex-shrink-0 mr-2 w-1 h-6 bg-main'></span>
                     Social
                   </strong>
-                  <ul className='lg:grid flex gap-x-3 lg:gap-x-0 lg:gap-y-3 pl-3 items-center'>
+                  <ul className='md:grid flex gap-x-3 md:gap-x-0 md:gap-y-3 pl-3 items-center'>
                     <li>
                       <a href=""><FontAwesomeIcon icon={faDiscord} className='w-[22px] h-[22px]'/></a>
                     </li>
