@@ -18,10 +18,15 @@ function App() {
   }, [])
   return (
     <Router>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Yantramanav&family=Six+Caps&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+      </style>
       <Layout>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
-          <Route exact path="//how-it-works" element={<HowItWorks />} />
+          <Route exact path="/how-it-works" element={<HowItWorks />} />
         </Routes>
       </Layout>
     </Router>
