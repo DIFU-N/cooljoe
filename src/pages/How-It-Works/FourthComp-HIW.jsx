@@ -5,7 +5,7 @@ const FourthComp = () => {
         fontFamily: 'Anton, sans-serif'
     }
   return (
-    <div className='border-t-2 border-[#171b2d] my-48 pt-32 w-full'>
+    <div className='border-t-2 border-[#171b2d] mt-48 pt-32 pb-52 w-full'>
         <div className='flex flex-col items-center gap-y-10'>
             <div className='flex items-center text-center w-full px-5'>
                 <span style={divStyle2} className='text-white text-6xl font-bold mb-8 px-4 text-center'>
