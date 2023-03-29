@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react'
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom"
 import HomePage from "./pages/HomePage/HomePage"
+import HowItWorks from './pages/How-It-Works/HowItWorks';
 import Layout from "./components/Layout"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import HowItWorks from './pages/How It Works/HowItWorks';
 
 function App() {
   useEffect(()=> {

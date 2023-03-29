@@ -10,7 +10,7 @@ const SecondComp = () => {
     fontFamily: 'Barlow, sans-serif'
   }
   return (
-    <div className='w-full my-32 border-t-2 border-[#171b2d]'>
+    <div className='w-full mt-32 mb-5 border-t-2 border-[#171b2d]'>
       <div className='flex flex-col w-full px-3 relative'>
         <AnimationOnScroll animateIn="animate__fadeIn">
           <img src="src\assets\images\hiw\webp\Missions_Ladders_Battlepass.webp" />
