@@ -19,7 +19,7 @@ const IntroComp = () => {
           <span className='text-[#f3c351] pl-2'>STRYDA</span>
         </span>
       </div>
-      <div className='grid grid-cols-[300px_300px_300px_300px] w-full px-5 gap-10 mx-4 overflow-x-auto scrollbar-hide'>
+      <div className='grid grid-cols-[280px_300px_300px_300px] w-full px-5 mx-4 overflow-x-auto scrollbar-hide'>
         <div className='text-white flex flex-col gap-y-3 items-center relative text-center gap-1 p-3 '>
           <img src="src\assets\images\hiw\Howitworks-Account.png" className='h-24 w-24' alt="Join" />
           <div className='w-8 h-8 rounded-full border-4 border-[#f3c351] bg-ui-900 mx-auto mt-2'></div>
