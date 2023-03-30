@@ -5,6 +5,7 @@ import HowItWorks from './pages/How-It-Works/HowItWorks';
 import Layout from "./components/Layout"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import GamesPage from './pages/Games/GamesPage';
 
 function App() {
   useEffect(()=> {
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/how-it-works" element={<HowItWorks />} />
+          <Route exact path="/games" element={<GamesPage />} />
         </Routes>
       </Layout>
     </Router>
