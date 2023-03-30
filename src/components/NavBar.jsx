@@ -48,7 +48,7 @@ const NavBar = () => {
               </NavLink>
               <NavLink to="/games" onClick={hideNavItems} className={'flex items-center font-semibold group relative'}>
                 <div className={(location.pathname === '/games' ? "px-[10px] justify-center py-1 text-[#f3c351] w-screen bg-[#171b2d]" : 
-                "px-2 py-1 group-hover:text-[#f3c351] bg-opacity-80 group-focus:text-[#f3c351] w-screen")}>Guides</div>
+                "px-2 py-1 group-hover:text-[#f3c351] bg-opacity-80 group-focus:text-[#f3c351] w-screen")}>Games</div>
               </NavLink>
               <NavLink to="/news" onClick={hideNavItems} className={'flex items-center font-semibold group relative'}>
                 <div className={(location.pathname === '/news' ? "px-[10px] justify-center py-1 text-[#f3c351] w-screen bg-[#171b2d]" : 
@@ -74,7 +74,7 @@ const NavBar = () => {
               </NavLink>
               <NavLink to="/games" className={'flex font-medium items-center group relative justify-center'}>
                 <div className={(location.pathname === '/games' ? "mx-3 text-[#f3c351]" : 
-                "mx-3 group-hover:text-[#f3c351] group-focus:text-[#f3c351]")}>Guides</div>
+                "mx-3 group-hover:text-[#f3c351] group-focus:text-[#f3c351]")}>Games</div>
                 <span className={(location.pathname === '/games' ? 'absolute left-0 right-0 bottom-0 scale-x-100 border-b-4 border-[#f3c351]' 
                 : "absolute left-0 right-0 bottom-0 border-b-[4px] border-transparent transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:border-b-3 group-hover:border-[#f3c351] group-hover:scale-100" 
                 )}></span>

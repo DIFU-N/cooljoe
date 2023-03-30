@@ -38,7 +38,7 @@ const FifthComp = () => {
         { id: 7, src: 'src/assets/images/jpeg/Game_cover_Rocket_League.jpg', alt: 'Rocket League' },
     ];
     return (
-        <div className='relative bg-[#05070f] pt-9 md:pt-0 lg:pt-9 border lg:px-9 px-4'>
+        <div className='relative bg-[#05070f] pt-9 md:pt-0 lg:pt-9 border-y lg:px-9 px-4'>
             <div className='grid items-center text-center md:text-left md:grid-cols-2 px-4'>
                 <div className='flex flex-col pt-24 gap-y-8'>
                     <span className='text-white text-7xl' style={divStyle}>JOIN THE COMMUNITY</span>
@@ -52,9 +52,9 @@ const FifthComp = () => {
                     <img src="src\assets\images\communitymanager.webp" alt="" className='mt-0 md:mt-20 lg:mt-0' />
                 </div>
             </div>
-            <div className='py-20 flex relative overflow-x-auto flex-col text-center lg:text-left items-center gap-y-8 justify-center'>
+            <div className='py-20 flex relative overflow-x-auto flex-col border-t border-t-[#171b2d] text-center lg:text-left items-center gap-y-8 justify-center'>
                 <span className='text-7xl md:text-6xl lg:text-7xl text-white' style={divStyle}>SUPPORTED GAMES</span>
-                <div className='flex overflow-x-auto w-full scrollbar-hide items-start lg:items-center flex-1 md:flex-1 px-8 gap-4'>
+                <div className='flex overflow-x-auto w-full lg:justify-center scrollbar-hide items-start lg:items-center flex-1 md:flex-1 px-8 gap-4'>
                     {images.map((image) => (
                         <a href="" key={image.id} className='active:opacity-50'>
                             <div className='w-32 aos-init'>
