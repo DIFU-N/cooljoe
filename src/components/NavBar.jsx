@@ -65,7 +65,7 @@ const NavBar = () => {
                 : "absolute left-0 right-0 bottom-0 border-b-[4px] border-transparent transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:border-b-3 group-hover:border-[#f3c351] group-hover:scale-100" 
                 )}></span>
               </NavLink>
-              <NavLink to="/dash" className={'flex font-medium items-center group relative justify-center'}>
+              <NavLink to="/how-it-works" className={'flex font-medium items-center group relative justify-center'}>
                 <div className={(location.pathname === '/dash' ? "mx-6 text-[#f3c351]" : 
                 "mx-6 group-hover:text-[#f3c351] group-focus:text-[#f3c351]")}>How It Works</div>
                 <span className={(location.pathname === '/dash' ? 'absolute left-0 right-0 bottom-0 scale-x-100 border-b-4 border-[#f3c351]' 

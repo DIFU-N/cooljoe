@@ -9,11 +9,13 @@ import Footer from "../../components/Footer";
 
 const HowItWorks = () => {
   return (
-    <div className='bg-[#05070f]'>
+    <div className='bg-[#05070f] w-full'>
+      <div className='px-5'>
         <IntroComp />
         <SecondComp />
         <ThirdComp />
         <FourthComp />
+      </div>
         <SixthComp />
         <Footer />
         <HelpFloat />
