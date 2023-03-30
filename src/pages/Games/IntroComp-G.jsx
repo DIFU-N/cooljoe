@@ -21,7 +21,7 @@ const IntroComp = () => {
       { id: 7, src: 'src/assets/images/jpeg/Game_cover_Rocket_League.jpg', alt: 'Rocket League' },
   ];
   return (
-      <div className='relative bg-[#05070f] pt-9 md:pt-0 lg:pt-9'>
+      <div className='relative bg-[#05070f] lg:py-16 md:pt-0 pt-9'>
           <div className='py-20 flex relative overflow-x-auto flex-col text-center lg:text-left items-center gap-y-8 justify-center'>
               <span className='text-7xl md:text-6xl lg:text-7xl text-white' style={divStyle}>GAMES</span>
               <div className='grid grid-cols-2 px-7 md:px-8 gap-4 justify-center md:justify-start lg:justify-center md:flex md:relative md:overflow-x-auto w-full scrollbar-hide items-center md:items-start  md:flex-1'>
