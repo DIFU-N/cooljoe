@@ -1,22 +1,24 @@
 import React, {useState} from 'react'
+import { useSelector } from 'react-redux';
 
 const IntroComp = () => {
-    const headlineTopic = [
-        {id:1, name:"APEX LEGENDS", tag:"apex"},
-        {id:2, name:"COMMUNITY", tag:"comm"},
-        {id:3, name:"CS:GO", tag:"csgo"},
-        {id:4, name:"DOTA 2", tag:"dota"},
-        {id:5, name:"ESPORTS", tag:"esports"},
-        {id:6, name:"FORTNITE", tag:"ftnite"},
-        {id:7, name:"LEAGUE OF LEGENDS", tag:"lgnds"},
-        {id:8, name:"PUBG:BATTLEGROUNDS", tag:"pubg"},
-        {id:9, name:"RAINBOW SIX SEIGE", tag:"seige"},
-        {id:10, name:"ROCKET LEAGUE", tag:"rl"},
-        {id:11, name:"STREAMING", tag:"stream"},
-        {id:12, name:"STRYDA", tag:"stryda"},
-        {id:13, name:"TEAMFIGHT TACTICS", tag:"tmfight"},
-        {id:14, name:"VALORANT", tag:"valorant"},
-    ];
+    // const headlineTopic = [
+    //     {id:1, name:"APEX LEGENDS", tag:"apex"},
+    //     {id:2, name:"COMMUNITY", tag:"comm"},
+    //     {id:3, name:"CS:GO", tag:"csgo"},
+    //     {id:4, name:"DOTA 2", tag:"dota"},
+    //     {id:5, name:"ESPORTS", tag:"esports"},
+    //     {id:6, name:"FORTNITE", tag:"ftnite"},
+    //     {id:7, name:"LEAGUE OF LEGENDS", tag:"lgnds"},
+    //     {id:8, name:"PUBG:BATTLEGROUNDS", tag:"pubg"},
+    //     {id:9, name:"RAINBOW SIX SEIGE", tag:"seige"},
+    //     {id:10, name:"ROCKET LEAGUE", tag:"rl"},
+    //     {id:11, name:"STREAMING", tag:"stream"},
+    //     {id:12, name:"STRYDA", tag:"stryda"},
+    //     {id:13, name:"TEAMFIGHT TACTICS", tag:"tmfight"},
+    //     {id:14, name:"VALORANT", tag:"valorant"},
+    // ];
+    const headlineTopic = useSelector((state) => state.tag.headlineTag);
 
     const products = [
         {id:1, tag: "stryda", name: "Football" },
