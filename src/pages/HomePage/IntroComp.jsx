@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import ArrowButton from '../../components/ArrowButton';
+import { removeFromSetPosts, setAsArticle, setAsBlog, setBlogPosts } from '../../app/blogPosts';
+import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 
 const IntroComp = () => {
     const divStyle = {
@@ -11,6 +13,45 @@ const IntroComp = () => {
     const divStyle1 = {
         fontFamily: 'Barlow, sans-serif'
     }
+    const dispatch = useDispatch();
+    console.log(useSelector((state) => state.posts.articleData));
+    const setPosts = useSelector((state) => state.posts.blogPosts, shallowEqual);
+    const updatePosts = useCallback(() => {
+        // Create new arrays for article and blog posts
+        let articlePosts = [];
+        let blogPosts = [];
+        // Iterate over the setPosts array and dispatch the appropriate action
+        console.log(setPosts);
+        setPosts.map(post => {
+            const shouldDisplayTable = Math.random() < 0.5;
+            if (shouldDisplayTable) {
+              articlePosts = [...articlePosts, post];
+            } else {
+              blogPosts = [...blogPosts, post];
+            }
+            dispatch(removeFromSetPosts(post.id));
+          });
+          console.log(articlePosts);
+          console.log(blogPosts);
+          
+          // Remove the product from setPosts once it has been dispatched
+        // });
+        // Update the Redux state with the new article and blog posts
+        dispatch(setAsArticle(articlePosts));
+        dispatch(setAsBlog(blogPosts));
+        dispatch(setBlogPosts([...articlePosts, ...blogPosts]));
+      }, []);
+        const [count, setCount] = useState(0);
+    const prevCountRef = useRef(count);
+      useEffect(() => {
+        if (prevCountRef.current === count) {
+            // Do something only if the count has changed
+            updatePosts();
+            setCount(1);
+            console.log("Count has changed");
+            // prevCountRef.current = count;
+          }
+      }, []);
     return (
         <div className='flex w-full z-10 relative lg:grid lg:grid-cols-2 pt-32 md:pt-36 md:px-5 lg:px-9 mx-auto overflow-hidden bg-[#05070f] text-white pb-40 md:pb-36 lg:pb-40'>
             <style>

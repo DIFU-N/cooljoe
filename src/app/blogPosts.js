@@ -274,6 +274,7 @@ export const postsSlice = createSlice({
       //   const { payload } = action;
       return {
         ...state,
+        blogData: [],
         blogData: [...action.payload],
       };
     },
@@ -288,7 +289,7 @@ export const postsSlice = createSlice({
     setBlogPosts: (state, action) => {
       return {
         ...state,
-        blogPosts: [action.payload]
+        blogPosts: action.payload
       };
     }
   },
