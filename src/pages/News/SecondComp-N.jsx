@@ -13,7 +13,11 @@ const SecondComp = () => {
   const divStyle = {
     fontFamily: "Anton, sans-serif",
   };
+  const divStyle1 = {
+    fontFamily: "Barlow, sans-serif",
+  };
   const activeCategory = useSelector((state) => state.tag.activeCategory);
+  const bgDefaultImage = "src\/assets\/images\/news\/news.jpg"
   const bgImage = useSelector((state) => state.tag.bgImage);
   const activeName = useSelector((state) => state.tag.activeName);
   const activeText = useSelector((state) => state.tag.activeText);
@@ -85,15 +89,26 @@ const SecondComp = () => {
     <div style={divStyle}>
       <div className="text-white">
         <div
-          style={{ backgroundImage: `url(${bgImage}?fit=fill&q=90&w=1600)` }}
-          className="w-full bg-cover h-full bg-center bg-[#05070f] bg-no-repeat"
+          style={{ backgroundImage: `url(${bgImage === "" ? bgDefaultImage : bgImage}?fit=fill&q=90&w=1600)` }}
+          className={`w-full bg-cover h-full bg-center bg-[#05070f] bg-no-repeat ${bgImage === "" ? "h-[250px] mb-10 rounded-lg" : "h-full"}`}
         >
-          <div className="bg-gradient-to-r px-4 from-[#05070f] via-transparent to-transparent h-full">
-            <div className="container mx-auto flex py-8 mb-10">
-              <span className="flex-shrink-0 mr-6 w-1 bg-[#f3c351]"></span>
+          <div className={`bg-gradient-to-r px-4 from-[#05070f] via-transparent to-transparent ${bgImage === "" ? "h-[250px] rounded-lg" : "h-full"}`}>
+            <div className={`container mx-auto flex py-8 mb-10 ${bgImage === "" ? "grid gap-y-20" : "flex"}`}>
+                <span style={divStyle1} className={`font-semibold w-fit rounded-full flex px-2 ${bgImage === "" ? "flex" : "hidden"} items-center h-[28px] text-[#05070F] text-lg border bg-white`}>
+                  Get Ready
+                </span>
+                <span style={divStyle1}>
+                  <div className={`opacity-75 text-xl w-fit ${bgImage === "" ? "flex" : "hidden"}`}>
+                    {/* {title} */} Got What You Expected?
+                  </div>
+                  <div className={`text-2xl ${bgImage === "" ? "flex" : "hidden"}`}>
+                    {/* {date} */} {'Check Again :) '} 
+                  </div>
+                </span>
+              <span className={`flex-shrink-0 mr-6 w-1 bg-${bgImage === "" ? "" : "[#f3c351]"}`}></span>
               <div className="grid grid-flow-row">
-                <span className="mb-4 text-6xl">{activeName}</span>
-                <div className="text-lg opacity-75">{activeText}</div>
+                <span className="mb-4 text-6xl">{activeName === "" ? "" : activeName}</span>
+                <div className="text-lg opacity-75">{activeText === "" ? "" : activeText}</div>
               </div>
             </div>
           </div>
@@ -134,215 +149,9 @@ const SecondComp = () => {
               }
             }
           })}
-        <div>{mixedPosts}</div>;
-        {/* {finalPosts
-          .filter(
-            ({ tag }) => activeCategory === tag || activeCategory === "all"
-          )
-          .map((okay) => {
-            let articlePosts = articleData
-            .map((post) => {
-              if (post.id === okay.id && post.date === okay.date) {
-                usedIds.push(okay.id);
-                return (
-                  <ArticlePost
-                    key={post.id + post.date}
-                    name={post.name}
-                    title={post.title}
-                    date={post.date}
-                  />
-                );
-              } else {
-                let matchFound = false;
-                for (let i = 0; i < articleData.length; i++) {
-                  if (
-                    post.id === articleData[i].id &&
-                    post.date === articleData[i].date
-                  ) {
-                    usedIds.push(articleData[i].id);
-                    matchFound = true;
-                    // console.log(matchFound);
-                  }
-                  break;
-                }
-                if (!matchFound && post.id && !usedIds.includes(post.id)) {
-                  usedIds.push(post.id);
-                  console.log("ad");
-                  return (
-                    <div
-                      key={post.id + post.date}
-                      className="flex flex-row border-8 border-green-800  justify-between mb-2"
-                    >
-                      <OtherPost
-                        key={post.id + post.date}
-                        name={post.name}
-                        title={post.title}
-                        date={post.date}
-                      />
-                    </div>
-                  );
-                }
-              }
-            });
-            return (
-              <div
-              key={okay.id + okay.date}
-              className="grid w-full justify-between mb-2"
-              >
-                {articlePosts}
-              </div>
-            );
-          })} */}
-        {/* {finalPosts
-          .filter(
-            ({ tag }) => activeCategory === tag || activeCategory === "all"
-          )
-          .map((okay) => {
-            let articlePosts = [];
-            let otherPosts = [];
-            articleData.forEach((post) => {
-              if (post.id === okay.id && post.date === okay.date) {
-                usedIds.push(okay.id);
-                articlePosts.push(
-                  <ArticlePost
-                    key={post.id + post.date}
-                    name={post.name}
-                    title={post.title}
-                    date={post.date}
-                  />
-                );
-              } else {
-                let matchFound = false;
-                for (let i = 0; i < articleData.length; i++) {
-                  if (
-                    post.id === articleData[i].id &&
-                    post.date === articleData[i].date
-                  ) {
-                    usedIds.push(articleData[i].id);
-                    matchFound = true;
-                    // console.log(matchFound);
-                  }
-                  break;
-                }
-                if (!matchFound && post.id && !usedIds.includes(post.id)) {
-                  usedIds.push(post.id);
-                  // console.log("ad");
-                  otherPosts.push(
-                    <OtherPost
-                      key={post.id + post.date}
-                      name={post.name}
-                      title={post.title}
-                      date={post.date}
-                    />
-                  );
-                }
-              }
-            });
-            let mixedPosts = [];
-            let i = 0;
-            let j = 0;
-            finalPosts.forEach((post) => {
-              console.log(post);
-
-            })
-            while (i < articlePosts.length && j < otherPosts.length) {
-              console.log(articlePosts[i].props.name);
-              // if (articlePosts[i].name) {
-              //   mixedPosts.push(articlePosts[i]);
-              //   i++;
-              // } else {
-              //   mixedPosts.push(otherPosts[j]);
-              //   j++;
-              // }
-            }
-            mixedPosts = mixedPosts.concat(
-              otherPosts.slice(j),
-              articlePosts.slice(i),
-            );
-            // for (let j = 0, n = 0; j < otherPosts.length, n < articlePosts.length; n++, j++) {
-            //     for (let i = 0; i < finalPosts.length; i++) {
-            //     // console.log(finalPosts[i].date === articlePosts[n].props.date);
-            //     // console.log(finalPosts[i].date === otherPosts[n].props.date);
-            //     console.log(articlePosts[n].props);
-            //     if (finalPosts[i].date === articlePosts[n].props.date) {
-            //       mixedPosts.push(articlePosts[n]);
-            //       n++;
-            //     } else if (finalPosts[i].date === otherPosts[j].props.date) {
-            //       mixedPosts.push(otherPosts[j]);
-            //       j++;
-            //     } 
-            //     // if(articlePosts[i].props.name)
-                
-            //   }
-            // //   // console.log(articlePosts);
-            // //   // if (otherPosts[i]) mixedPosts.push(otherPosts[i]);
-            // //   // if (articlePosts[i]) mixedPosts.push(articlePosts[i]);
-            // }
-
-            // console.log(articlePosts);
-            
-            return (
-              <div
-                key={okay.id + okay.date}
-                className="grid w-full justify-between mb-2"
-              >
-                {mixedPosts}
-              </div>
-            );
-          })} */}
-        {/* {console.log("After sort: ", articleData)} */}
-        {console.log("After sort: ", finalPosts)}
-        {/* for (let i = 0; i < articleData.length; i++) {
-            if (articleData[i].id === okay.id && articleData[i].date === okay.date) {
-              return (
-                <div
-                  key={okay.id + okay.date}
-                  className="category__list-item flex items-center justify-between mb-2"
-                >
-                  {/* {isArticlePost ? ( 
-                    <ArticlePost
-                      key={okay.id + okay.date}
-                      name={okay.name}
-                      title={okay.title}
-                      date={okay.date}
-                    />
-                </div>
-            )} else {
-              return(
-                <div
-                key={okay.id + okay.date}
-                className="category__list-item flex items-center justify-between mb-2"
-                >
-                  <OtherPost
-                  key={okay.id + okay.date}
-                  name={okay.name}
-                  title={okay.title}
-                  date={okay.date}
-                  />
-                </div>
-              )
-            }
-          } */}
-        {/* {setPosts
-  .filter(({ tag }) => activeCategory === tag || activeCategory === "all")
-  .map((post => 
-    <div
-      key={post.id + post.date}
-      className="category__list-item flex items-center justify-between mb-2"
-    >
-      {console.log(post.id)}
-      {post.isArticle ? (
-        <ArticlePost
-          key={post.id + post.date}
-          name={post.name}
-          title={post.title}
-          date={post.date}
-        />
-      ) : (
-        <OtherPost key={post.id + post.date} />
-      )}
-    </div>
-  ))} */}
+        <div
+          className="grid w-full justify-between gap-y-8"
+        >{mixedPosts}</div>;
       </div>
     </div>
   );

@@ -13,14 +13,16 @@ const OtherPost = ({ name, title, date }) => {
 
   return (
     <div className="">
-      <div className="mx-4 border-blue-900 border-2 rounded-lg">
+      <div className="mx-6">
         <div
         //   style={{ backgroundImage: `url(${testImage1})` }}
-          className="w-full bg-cover h-full bg-center bg-[#05070f] bg-no-repeat"
+          className="w-full rounded-t-lg bg-cover h-full bg-center bg-[#05070f] bg-no-repeat"
         >
-            <img src={testImage1} alt="" />
+            <img src={testImage1} 
+            className="rounded-t-lg"
+            alt="" />
         </div>
-        <div className="px-5 h-full bg-white">
+        <div className="px-5 h-full bg-white rounded-b-lg">
           <div className="container items-center mx-auto flex py-8">
             <div style={divStyle} className="grid gap-y-2 grid-flow-row">
               <div className="flex justify-between items-center w-full">
