@@ -88,10 +88,10 @@ const NavBar = () => {
               </NavLink>
             </div>
           </div>
-          <div className="w-full gap-1 flex justify-end lg:justify-start items-center">  
-            <div className="md:py-[10px] flex gap-x-1">
-              <button className="rounded-2xl h-8 md:h-auto w-[70px] font-semibold lg:font-normal flex justify-center items-center md:py-1 border-[1.5px] text-[#a5a7b5] text-sm md:text-sm border-[#a5a7b5] hover:bg-slate-800">LOG IN</button>
-              <button className="rounded-2xl h-auto md:h-auto flex justify-center items-center font-semibold lg:font-normal w-24 md:p-1 bg-[#d5ab48] hover:bg-[#f3c351] text-sm text-[#1b1b25]">SIGN UP</button>
+          <div className="w-full gap-1 flex justify-end md:items-start lg:justify-start items-center">  
+            <div className="md:pb-[10px] md:pt-[2px] lg:py-[10px] flex gap-x-1">
+              <button className="rounded-2xl h-8 md:h-auto w-[70px] font-semibold md:items-start lg:font-normal flex justify-center items-center md:py-1 border-[1.5px] text-[#a5a7b5] text-sm md:text-sm border-[#a5a7b5] hover:bg-slate-800">LOG IN</button>
+              <button className="rounded-2xl h-auto md:h-auto flex justify-center items-center md:items-start font-semibold lg:font-normal w-24 md:p-1 bg-[#d5ab48] hover:bg-[#f3c351] text-sm text-[#1b1b25]">SIGN UP</button>
             </div>
             <button title="Show navigation" type="button" onClick={showNavItems} 
             className="button button-tertiary button-sm bg-[#171b2d] py-1 px-2 rounded-full lg:hidden">
