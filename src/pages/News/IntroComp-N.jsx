@@ -13,8 +13,8 @@ const IntroComp = () => {
         fontFamily: 'Barlow, sans-serif'
     }
   return (
-    <div className='relative pt-[60px] md:pt-[80px] md:mx-12 lg:pt-[90px] lg:py-2 ml-4 overflow-x-auto overflow-y-hidden mb-3 bg-[#e1e2e7]'>
-        <div className='flex gap-x-4 py-2 lg:mx-5 lg:py-0'>
+    <div className={`relative pt-[60px] md:pt-[80px] lg:pt-[90px] lg:py-2 ml-4 overflow-x-auto overflow-y-hidden mb-3 bg-[#e1e2e7] ${activeCategory === "all" ? "md:mx-12 lg:mx-28" : "md:mx-12"}`}>
+        <div className={`flex gap-x-4 lg:mx-5 py-2 lg:py-0`}>
         {headlineTopic.map((topic) => (
             // <a href="" key={topic.id} className='active:opacity-50'>
                 <button

@@ -16,22 +16,22 @@ const OtherPost = ({ name, title, date }) => {
       <div className="mx-6 md:mx-0">
         <div
         //   style={{ backgroundImage: `url(${testImage1})` }}
-          className="w-full rounded-t-lg bg-cover h-full md:h-[120px] bg-center bg-[#05070f] bg-no-repeat"
+          className="w-full rounded-t-lg bg-cover h-full bg-center bg-[#05070f] bg-no-repeat"
         >
             <img src={testImage1} 
             className="rounded-t-lg"
             alt="" />
         </div>
-        <div className="px-5 h-full md:h-[220px] bg-white rounded-b-lg">
-          <div className="container items-center mx-auto flex py-8">
+        <div className="px-5 h-full lg:pt-5 md:h-[255px] lg:h-[210px] bg-white rounded-b-lg">
+          <div className="container items-center mx-auto flex py-8 md:py-2 lg:py-8">
             <div style={divStyle} className="grid gap-y-2 grid-flow-row">
-              <div className="flex justify-between md:flex-col items-center md:items-start w-full">
-                <span className="font-bold w-fit rounded-full flex px-2 items-center h-[40px] text-[#05070F] text-lg md:text-base border bg-[#e1e2e7]">
+              <div className="flex justify-between md:justify-start md:flex-col lg:flex-row w-full lg:justify-between">
+                <span className="font-bold w-fit rounded-full flex px-2 text-center items-center h-[28px] md:h-full text-[#05070F] text-lg border bg-[#e1e2e7]">
                 {name}
                 </span>
                 <div className="text-base text-[#818495]">{date}</div>
               </div>
-              <div className="opacity-75 text-[#05070F] text-xl w-fit">
+              <div className="opacity-75 md:text-base text-[#05070F] text-xl w-fit">
               {title}
               </div>
             </div>

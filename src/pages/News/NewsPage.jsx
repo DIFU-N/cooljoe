@@ -4,7 +4,7 @@ import {SecondComp} from './SecondComp-N'
 
 const NewsPage = () => {
   return (
-    <div className='bg-[#e1e2e7] md:px-12 md:pb-80'>
+    <div className='bg-[#e1e2e7]'>
         <IntroComp />
         <SecondComp />
     </div>

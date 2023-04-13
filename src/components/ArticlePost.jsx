@@ -15,10 +15,10 @@ const ArticlePost = ({ name, title, date }) => {
       <div className="mx-6 md:mx-0">
         <div
           style={{ backgroundImage: `url(${testImage1})` }}
-          className="w-full bg-cover rounded-md h-[200px] md:h-[340px] bg-center bg-[#05070f] bg-no-repeat"
+          className="w-full bg-cover rounded-md h-[200px] md:h-[340px] lg:h-[400px] bg-center bg-[#05070f] bg-no-repeat"
         >
           {/* {data.map(({ name, title, date }) => ( */}
-          <div className="rounded-md px-5 h-full bg-gradient-to-b from-transparent to-black">
+          <div className="rounded-md px-5 h-full bg-gradient-to-b flex from-transparent to-black">
             <div className="container items-center mx-auto flex py-5 mb-10">
               <div style={divStyle} className="grid gap-y-8 grid-flow-row">
                 <span className="font-bold w-fit rounded-full flex px-2 items-center h-[28px] text-[#05070F] text-lg border bg-white">
