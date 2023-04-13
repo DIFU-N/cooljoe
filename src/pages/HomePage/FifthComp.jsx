@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const FifthComp = () => {
     useEffect(()=> {
-      AOS.init({
-        duration: 100, // Animation duration in milliseconds
-        once: false, // Only animate once
-      });
+    //   AOS.init({
+    //     duration: 100, // Animation duration in milliseconds
+    //     once: false, // Only animate once
+    //   });
     }, [])
     const divStyle = {
         fontFamily: 'Bebas Neue, cursive'
@@ -57,24 +57,26 @@ const FifthComp = () => {
                 <div className='flex overflow-x-auto w-full lg:justify-center scrollbar-hide items-start lg:items-center flex-1 md:flex-1 px-8 gap-4'>
                     {images.map((image) => (
                         <a href="" key={image.id} className='active:opacity-50'>
-                            <div className='w-32 aos-init'>
-                                <img 
-                                src={image.src} 
-                                // className='rounded-lg'
-                                // className={`rounded-lg ${hoveredIndex !== image.id ? 'brightness-50' : ''}`} 
-                                className={`rounded-lg aos-animate ${
-                                    hoveredIndex !== -1 && hoveredIndex !== image.id
-                                      ? "brightness-50"
-                                      : ""
-                                  }`}
-                                alt={image.alt}
-                                onMouseOver={() => handleMouseEnter(image.id)}
-                                onMouseOut={() => handleMouseLeave()} 
-                                    data-aos="fade-left"
-                                    data-aos-duration={image.id*350}
-                                    data-aos-once="false"
-                                />
-                            </div>
+                            <AnimationOnScroll delay={image.id*100} animateIn='animate__fadeInRight'>
+                                <div className='w-32 aos-init'>
+                                    <img 
+                                    src={image.src} 
+                                    // className='rounded-lg'
+                                    // className={`rounded-lg ${hoveredIndex !== image.id ? 'brightness-50' : ''}`} 
+                                    className={`rounded-lg aos-animate ${
+                                        hoveredIndex !== -1 && hoveredIndex !== image.id
+                                        ? "brightness-50"
+                                        : ""
+                                    }`}
+                                    alt={image.alt}
+                                    onMouseOver={() => handleMouseEnter(image.id)}
+                                    onMouseOut={() => handleMouseLeave()} 
+                                        // data-aos="fade-left"
+                                        // data-aos-duration={image.id*350}
+                                        // data-aos-once="false"
+                                    />
+                                </div>
+                            </AnimationOnScroll>
                         </a>
                     ))}
                 </div>
