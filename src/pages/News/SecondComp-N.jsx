@@ -84,7 +84,7 @@ const SecondComp = () => {
   }, []);
   let mixedPosts = [];
   return (
-    <div style={divStyle}>
+    <div style={divStyle} className="pb-20">
       <div className={`text-white ${bgImage === "" ? "px-28" : "px-0"}`}>
         <div
           style={{ backgroundImage: `url(${bgImage === "" ? bgDefaultImage : bgImage}?fit=fill&q=90&w=1600)` }}
@@ -151,7 +151,7 @@ const SecondComp = () => {
           className="grid w-full px-12 justify-between gap-y-8"
         >
           <Pagination data={mixedPosts} />
-        </div>;
+        </div>
       </div>
       <div>
       </div>

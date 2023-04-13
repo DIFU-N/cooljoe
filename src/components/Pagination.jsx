@@ -50,8 +50,8 @@ const Pagination = (props) => {
           previousClassName="hidden"
           renderOnZeroPageCount={null}
           activeLinkClassName="bg-[#f3c351] rounded-md flex justify-center items-center w-full h-full text-black"
-          pageClassName="w-[60px] h-[60px] flex justify-center items-center hover:bg-orange-100 text-[#bbbdc7]"
-          className="list-none flex font-extrabold border-2 rounded-md bg-white justify-center p-6  mx-6 md:mx-0 mt-10 items-center text-xl gap-2"
+          pageClassName="w-[50px] h-[50px] flex justify-center items-center hover:bg-orange-100 text-[#bbbdc7]"
+          className="list-none flex font-extrabold border-2 rounded-md bg-white justify-start p-3  mx-6 md:mx-0 mt-10 items-center text-xl gap-2"
         />
       </div>
     </>
