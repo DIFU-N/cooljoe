@@ -8,6 +8,7 @@ import {
   setAsBlog,
   setBlogPosts,
 } from "../../app/blogPosts";
+import Pagination from "../../components/Pagination";
 
 const SecondComp = () => {
   const divStyle = {
@@ -151,7 +152,12 @@ const SecondComp = () => {
           })}
         <div
           className="grid w-full justify-between gap-y-8"
-        >{mixedPosts}</div>;
+        >
+          {/* {mixedPosts} */}
+          <Pagination data={mixedPosts} />
+        </div>;
+      </div>
+      <div>
       </div>
     </div>
   );
