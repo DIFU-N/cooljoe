@@ -45,9 +45,6 @@ const SecondComp = () => {
       return 0;
     }
   });
-  // console.log(finalSort);
-  // const finalPosts = [...setPosts[0]]
-  // console.log(finalPosts);
   const updatePosts = useCallback(() => {
     // Create new arrays for article and blog posts
     let articlePosts = [];
@@ -99,7 +96,7 @@ const SecondComp = () => {
                   Get Ready
                 </span>
                 <span style={divStyle1}>
-                  <div className={`opacity-75 text-xl w-fit ${bgImage === "" ? "flex" : "hidden"}`}>
+                  <div className={`opacity-75 text-x border-whitel w-fit ${bgImage === "" ? "flex" : "hidden"}`}>
                     {/* {title} */} Got What You Expected?
                   </div>
                   <div className={`text-2xl ${bgImage === "" ? "flex" : "hidden"}`}>
@@ -153,7 +150,6 @@ const SecondComp = () => {
         <div
           className="grid w-full justify-between gap-y-8"
         >
-          {/* {mixedPosts} */}
           <Pagination data={mixedPosts} />
         </div>;
       </div>

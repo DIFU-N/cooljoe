@@ -12,10 +12,10 @@ const ArticlePost = ({ name, title, date }) => {
     "https://www.datocms-assets.com/92583/1676974664-apex-legends-team-deathmatch-1.jpg";
   return (
     <div >
-      <div className="mx-6">
+      <div className="mx-6 md:mx-0">
         <div
           style={{ backgroundImage: `url(${testImage1})` }}
-          className="w-full bg-cover rounded-md h-[200px] bg-center bg-[#05070f] bg-no-repeat"
+          className="w-full bg-cover rounded-md h-[200px] md:h-[340px] bg-center bg-[#05070f] bg-no-repeat"
         >
           {/* {data.map(({ name, title, date }) => ( */}
           <div className="rounded-md px-5 h-full bg-gradient-to-b from-transparent to-black">

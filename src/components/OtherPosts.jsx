@@ -13,20 +13,20 @@ const OtherPost = ({ name, title, date }) => {
 
   return (
     <div className="">
-      <div className="mx-6">
+      <div className="mx-6 md:mx-0">
         <div
         //   style={{ backgroundImage: `url(${testImage1})` }}
-          className="w-full rounded-t-lg bg-cover h-full bg-center bg-[#05070f] bg-no-repeat"
+          className="w-full rounded-t-lg bg-cover h-full md:h-[120px] bg-center bg-[#05070f] bg-no-repeat"
         >
             <img src={testImage1} 
             className="rounded-t-lg"
             alt="" />
         </div>
-        <div className="px-5 h-full bg-white rounded-b-lg">
+        <div className="px-5 h-full md:h-[220px] bg-white rounded-b-lg">
           <div className="container items-center mx-auto flex py-8">
             <div style={divStyle} className="grid gap-y-2 grid-flow-row">
-              <div className="flex justify-between items-center w-full">
-                <span className="font-bold w-fit rounded-full flex px-2 items-center h-[40px] text-[#05070F] text-lg border bg-[#e1e2e7]">
+              <div className="flex justify-between md:flex-col items-center md:items-start w-full">
+                <span className="font-bold w-fit rounded-full flex px-2 items-center h-[40px] text-[#05070F] text-lg md:text-base border bg-[#e1e2e7]">
                 {name}
                 </span>
                 <div className="text-base text-[#818495]">{date}</div>

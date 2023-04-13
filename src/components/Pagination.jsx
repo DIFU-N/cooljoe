@@ -30,7 +30,7 @@ const Pagination = (props) => {
     
     return (
       <>    
-      <div className="grid w-full justify-between gap-y-8">
+      <div className="grid w-full md:grid-cols-3 md:gap-4 justify-between gap-y-8">
         {currentItems.map((item) => {
           return(
             <div>{item}</div>

@@ -13,7 +13,7 @@ const IntroComp = () => {
         fontFamily: 'Barlow, sans-serif'
     }
   return (
-    <div className='relative pt-[60px] ml-4 overflow-x-auto mb-3 bg-[#e1e2e7]'>
+    <div className='relative pt-[60px] md:pt-[80px] ml-4 md:ml-0 overflow-x-auto overflow-y-hidden mb-3 bg-[#e1e2e7]'>
         <div className='flex gap-x-4 py-2'>
         {headlineTopic.map((topic) => (
             // <a href="" key={topic.id} className='active:opacity-50'>
