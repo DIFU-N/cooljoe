@@ -15,6 +15,7 @@ const NavBar = () => {
   const hideNavItems = () => {
     document.getElementById('navItems').classList.remove('translate-y-0');
     document.getElementById('navItems').classList.add('-translate-y-full');
+    window.scrollTo(0, 0);
   }  
   return (
     <div className="z-50 bg-[#070a14] bg-opacity-80 fixed text-base py-2 lg:py-0 px-2 md:px-9 w-screen backdrop-blur">
@@ -58,28 +59,28 @@ const NavBar = () => {
           </div>
           <div id="lgnavItems" className="lg:flex lg:justify-center lg:relative hidden mt-[5px] text-[16px] w-full">
             <div className="lg:flex-row flex flex-col">
-              <NavLink to="/" className={'flex items-center font-medium group relative justify-center'}>
+              <NavLink to="/" onClick={()=> {window.scrollTo(0, 0);}} className={'flex items-center font-medium group relative justify-center'}>
                 <div className={(location.pathname === '/' ? "mx-5 text-[#f3c351]" : 
                 "mx-5 group-hover:text-[#f3c351] group-focus:text-[#f3c351]")}>Home</div>
                 <span className={(location.pathname === '/' ? 'absolute left-0 right-0 bottom-0 scale-x-100 border-b-4 border-[#f3c351]' 
                 : "absolute left-0 right-0 bottom-0 border-b-[4px] border-transparent transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:border-b-3 group-hover:border-[#f3c351] group-hover:scale-100" 
                 )}></span>
               </NavLink>
-              <NavLink to="/how-it-works" className={'flex font-medium items-center group relative justify-center'}>
+              <NavLink to="/how-it-works" onClick={()=> {window.scrollTo(0, 0);}} className={'flex font-medium items-center group relative justify-center'}>
                 <div className={(location.pathname === '/how-it-works' ? "mx-6 text-[#f3c351]" : 
                 "mx-6 group-hover:text-[#f3c351] group-focus:text-[#f3c351]")}>How It Works</div>
                 <span className={(location.pathname === '/how-it-works' ? 'absolute left-0 right-0 bottom-0 scale-x-100 border-b-4 border-[#f3c351]' 
                 : "absolute left-0 right-0 bottom-0 border-b-[4px] border-transparent transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:border-b-3 group-hover:border-[#f3c351] group-hover:scale-100" 
                 )}></span>
               </NavLink>
-              <NavLink to="/games" className={'flex font-medium items-center group relative justify-center'}>
+              <NavLink to="/games" onClick={()=> {window.scrollTo(0, 0);}} className={'flex font-medium items-center group relative justify-center'}>
                 <div className={(location.pathname === '/games' ? "mx-3 text-[#f3c351]" : 
                 "mx-3 group-hover:text-[#f3c351] group-focus:text-[#f3c351]")}>Games</div>
                 <span className={(location.pathname === '/games' ? 'absolute left-0 right-0 bottom-0 scale-x-100 border-b-4 border-[#f3c351]' 
                 : "absolute left-0 right-0 bottom-0 border-b-[4px] border-transparent transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:border-b-3 group-hover:border-[#f3c351] group-hover:scale-100" 
                 )}></span>
               </NavLink>
-              <NavLink to="/news" className={'flex font-medium items-center group relative justify-center'}>
+              <NavLink to="/news" onClick={()=> {window.scrollTo(0, 0);}} className={'flex font-medium items-center group relative justify-center'}>
                 <div className={(location.pathname === '/news' ? "mx-3 text-[#f3c351]" : 
                 "mx-3 group-hover:text-[#f3c351] group-focus:text-[#f3c351]")}>News</div>
                 <span className={(location.pathname === '/news' ? 'absolute left-0 right-0 bottom-0 scale-x-100 border-b-4 border-[#f3c351]' 
