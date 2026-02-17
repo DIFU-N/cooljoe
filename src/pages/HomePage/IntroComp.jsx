@@ -39,7 +39,7 @@ const IntroComp = () => {
                 </div>
             </div>
             <video className="absolute top-0 md:top-[25rem] lg:top-64 z-0 right-0 bottom-0 h-screen w-screen lg:w-full md:h-auto xl:w-3/4 object-cover opacity-25 lg:opacity-100 mix-blend-lighten" autoPlay playsInline loop preload="true" data-cmp-info="9">
-                <source src="https://res.cloudinary.com/gloot/video/upload/v1675240209/Stryda/marketing/website/Stryda_homepage-loop_02.mp4" />
+                <source src="src\assets\video\Stryda_homepage-loop_02.mp4" />
                 <img src="https://res.cloudinary.com/gloot/image/upload/v1676294294/Stryda/marketing/website/Stryda_homepage-loop_02-png.png" alt="" data-cmp-info="9" />
             </video>
         </div>
