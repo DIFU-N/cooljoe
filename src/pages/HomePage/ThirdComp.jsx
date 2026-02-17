@@ -44,7 +44,7 @@ const ThirdComp = () => {
                         data-aos-delay="200"
                         // data-aos-easing="cubic-bezier(.25, .46, .45, .94)"
                     >
-                    <img alt="Make your GG more rewarding" src="src\assets\images\GG_s.webp" className='mt-0 md:mt-20 lg:mt-0'/>
+                    <img alt="Make your GG more rewarding" src="/images/GG_s.webp" className='mt-0 md:mt-20 lg:mt-0'/>
                     </div>
                 </div>
                 <div className='w-full flex flex-col md:flex-row gap-16 md:gap-12 lg:gap-16 border-b border-b-[#3d3e44]'>
@@ -55,7 +55,7 @@ const ThirdComp = () => {
                         data-aos-delay="100"
                         // data-aos-easing="cubic-bezier(.25, .46, .45, .94)"
                     >
-                        <img alt="Make your GG more rewarding" src="src\assets\images\Missions.webp" className='mt-0 md:mt-20 lg:mt-0'/>
+                        <img alt="Make your GG more rewarding" src="/images/Missions.webp" className='mt-0 md:mt-20 lg:mt-0'/>
                     </div>
                     <div className='w-full lg:w-[80%] flex items-center'>
                         <div className='flex flex-col text-center items-center py-8 gap-8'
@@ -97,7 +97,7 @@ const ThirdComp = () => {
                         data-aos-once="false"
                         data-aos-delay="200"
                     >
-                    <img alt="Make your GG more rewarding" src="src\assets\images\Tracker.webp"/>
+                    <img alt="Make your GG more rewarding" src="/images/Tracker.webp"/>
                     </div>
                 </div>
                 <div className='w-full flex flex-col md:flex-row gap-16 md:gap-12 lg:gap-16 '>
@@ -108,7 +108,7 @@ const ThirdComp = () => {
                         data-aos-delay="200"
                         // data-aos-easing="ease-out-quad"
                     >
-                        <img alt="Make your GG more rewarding" src="src\assets\images\Clan.webp"/>
+                        <img alt="Make your GG more rewarding" src="/images/Clan.webp"/>
                     </div>
                     <div className='w-full lg:w-[80%] flex items-center'>
                         <div className='flex flex-col text-center items-center md:items-start lg:items-center py-8 gap-8'

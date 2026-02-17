@@ -18,7 +18,7 @@ const SecondComp = () => {
     fontFamily: "Barlow, sans-serif",
   };
   const activeCategory = useSelector((state) => state.tag.activeCategory);
-  const bgDefaultImage = "src\/assets\/images\/news\/news.jpg"
+  const bgDefaultImage = "/images/news/news.jpg"
   const bgImage = useSelector((state) => state.tag.bgImage);
   const activeName = useSelector((state) => state.tag.activeName);
   const activeText = useSelector((state) => state.tag.activeText);

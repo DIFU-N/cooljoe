@@ -14,7 +14,7 @@ const ThirdComp = () => {
         <div className='w-full mt-32 mb-10 border-t-2 border-[#171b2d]'>
             <div className='flex flex-col md:flex-row w-full px-3 relative'>
                 <AnimationOnScroll animateIn="animate__fadeIn">
-                    <img src="src\assets\images\hiw\webp\Rewards.webp" />
+                    <img src="/images/hiw/webp/Rewards.webp" />
                 </AnimationOnScroll>
                 <div className='my-10 flex flex-col gap-y-5 items-center lg:items-start'>
                     <AnimationOnScroll animateIn="animate__fadeInUp">

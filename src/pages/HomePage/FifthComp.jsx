@@ -29,13 +29,13 @@ const FifthComp = () => {
         setHoveredIndex(-1);
     };
     const images = [
-        { id: 1, src: 'src/assets/images/jpeg/Game_cover_Valorant.jpg', alt: 'Valorant' },
-        { id: 2, src: 'src/assets/images/jpeg/Game_cover_PUBG_Battlegrounds.jpg', alt: 'PUBG' },
-        { id: 3, src: 'src/assets/images/jpeg/Game_cover_Apex_Legends.jpg', alt: 'Apex Legends' },
-        { id: 4, src: 'src/assets/images/jpeg/Game_cover_CSGO.jpg', alt: 'CSGO' },
-        { id: 5, src: 'src/assets/images/jpeg/Game_cover_Dota_2.jpg', alt: 'Dota 2' },
-        { id: 6, src: 'src/assets/images/jpeg/Game_cover_League_of_Legends.jpg', alt: 'League of Legends' },
-        { id: 7, src: 'src/assets/images/jpeg/Game_cover_Rocket_League.jpg', alt: 'Rocket League' },
+        { id: 1, src: '/images/jpeg/Game_cover_Valorant.jpg', alt: 'Valorant' },
+        { id: 2, src: '/images/jpeg/Game_cover_PUBG_Battlegrounds.jpg', alt: 'PUBG' },
+        { id: 3, src: '/images/jpeg/Game_cover_Apex_Legends.jpg', alt: 'Apex Legends' },
+        { id: 4, src: '/images/jpeg/Game_cover_CSGO.jpg', alt: 'CSGO' },
+        { id: 5, src: '/images/jpeg/Game_cover_Dota_2.jpg', alt: 'Dota 2' },
+        { id: 6, src: '/images/jpeg/Game_cover_League_of_Legends.jpg', alt: 'League of Legends' },
+        { id: 7, src: '/images/jpeg/Game_cover_Rocket_League.jpg', alt: 'Rocket League' },
     ];
     return (
         <div className='relative bg-[#05070f] pt-9 md:pt-0 lg:pt-9 border-y lg:px-9 px-4'>
@@ -49,7 +49,7 @@ const FifthComp = () => {
                     </span>
                 </div>
                 <div className='hidden md:block'>
-                    <img src="src\assets\images\communitymanager.webp" alt="" className='mt-0 md:mt-20 lg:mt-0' />
+                    <img src="/images/communitymanager.webp" alt="" className='mt-0 md:mt-20 lg:mt-0' />
                 </div>
             </div>
             <div className='py-20 flex relative overflow-x-auto flex-col border-t border-t-[#171b2d] text-center lg:text-left items-center gap-y-8 justify-center'>

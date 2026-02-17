@@ -21,7 +21,7 @@ const FourthComp = () => {
             </div>
             <div className='mt-10 px-5 md:px-2 lg:px-0'>
                 <AnimationOnScroll animateIn="animate__fadeInUp">
-                    <img className="lg:w-[1200px]" src="src\assets\images\hiw\webp\Clans_Cards.webp" />
+                    <img className="lg:w-[1200px]" src="/images/hiw/webp/Clans_Cards.webp" />
                 </AnimationOnScroll>
             </div>
         </div>

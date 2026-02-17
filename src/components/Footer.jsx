@@ -11,19 +11,19 @@ const Footer = () => {
         <footer className='lg:py-20 md:pb-20 w-full py-7 px-5 lg:px-20 text-white' style={divStyle}>
           <div className='w-full flex flex-col md:flex-row md:justify-between'>
             <div className='flex flex-col gap-y-7 items-start'>
-              <img src="src\assets\images\svg\stryda-logo-main-white.svg" 
+              <img src="/images/svg/stryda-logo-main-white.svg" 
               className='w-auto h-9 lg:h-10'
               alt=""/>
               <div className='lg:text-sm text-sm flex flex-col gap-y-1 py-1'>
                 <span>© G-Loot Global Esports AB.</span>
                 <div className='flex flex-row gap-x-1 lg:gap-x-3'>
                   <span className='text-[#828387] font-semibold'>All rights reserved. Made in Stockholm, Sweden</span>
-                  <img src="src\assets\images\svg\sweden.svg" className='w-3 lg:w-auto' alt="" />
+                  <img src="/images/svg/sweden.svg" className='w-3 lg:w-auto' alt="" />
                 </div>
               </div>
               <div className='flex gap-y-1 flex-col'>
                 <span className='text-xs lg:text-xs text-[#828387] font-semibold py-1'>Secure payment methods with</span>
-                <img src="src\assets\images\payment-providers@2x.png" 
+                <img src="/images/payment-providers@2x.png" 
                 className='w-72 lg:w-[288px] h-10 lg:h-10'
                 alt="" />
               </div>

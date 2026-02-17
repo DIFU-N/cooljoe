@@ -7,7 +7,7 @@ const ArticlePost = ({ name, title, date }) => {
   };
   const data = useSelector((state) => state.posts.articleData);
   // console.log(data);
-  const textImage = "src/assets/images/news/apex.jpg";
+  const textImage = "/images/news/apex.jpg";
   const testImage1 =
     "https://www.datocms-assets.com/92583/1676974664-apex-legends-team-deathmatch-1.jpg";
   return (

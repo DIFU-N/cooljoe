@@ -24,7 +24,7 @@ const NavBar = () => {
       </style>
       <nav className="text-[#7b7e8e] grid grid-cols-2 gap-1 lg:grid-cols-[10.5%_69.5%_20%] lg:gap-x-[34px] overflow-hidden" style={divStyle}>
           <div className="flex md:ml-4">
-          <img src="src\assets\images\svg\stryda-logo-main-white.svg" 
+          <img src="/images/svg/stryda-logo-main-white.svg" 
               className='w-auto h-8 lg:h-11'
               alt=""/>
             {/* <NavLink className={'w-full my-1 first-letter:text-3xl first-letter:text-[#f3c351] text-xl text-green-900'}>O STRYDAa</NavLink> */}

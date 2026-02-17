@@ -18,7 +18,7 @@ const IntroComp = () => {
       </div>
       <div className='grid grid-cols-[280px_300px_300px_300px] w-full px-5 mx-4 overflow-x-auto scrollbar-hide'>
         <div className='text-white flex flex-col gap-y-3 justify-center relative text-center items-center gap-1 lg:gap-x-0 p-3 lg:py-3 lg:px-0'>
-          <img src="src\assets\images\hiw\Howitworks-Account.png" className='h-24 w-24' alt="Join" />
+          <img src="/images/hiw/Howitworks-Account.png" className='h-24 w-24' alt="Join" />
           <div className='w-full hidden lg:block'>
             <div className="relative">
               <div className="w-8 h-8 z-50 relative rounded-full border-4 border-[#f3c351] bg-[#05070f] mx-auto mt-2"></div>
@@ -34,7 +34,7 @@ const IntroComp = () => {
           <ArrowButton />
         </div>
         <div className='text-white flex flex-col gap-y-3 items-center relative text-center md:items-center gap-1 lg:gap-x-0 p-3 lg:py-3 lg:px-0'>
-          <img src="src\assets\images\hiw\Howitworks-Mission.png" className='h-24 w-24' alt="Compete" />
+          <img src="/images/hiw/Howitworks-Mission.png" className='h-24 w-24' alt="Compete" />
           <div className='w-full hidden lg:block'>
             <div className="relative">
               <div className="w-8 h-8 z-50 relative rounded-full border-4 border-[#f3c351] bg-[#05070f] mx-auto mt-2"></div>
@@ -49,7 +49,7 @@ const IntroComp = () => {
           <span className='text-[#A5A7B5] text-lg' style={divStyle1}>Enroll in Ladders & complete Missions.</span>
         </div>
         <div className='text-white flex flex-col gap-y-3 items-center relative text-center md:items-center gap-1 lg:gap-x-0 p-3 lg:py-3 lg:px-0 '>
-          <img src="src\assets\images\hiw\Howitworks-Shop.png" className='h-24 w-24' alt="Shop" />
+          <img src="/images/hiw/Howitworks-Shop.png" className='h-24 w-24' alt="Shop" />
           <div className='w-full hidden lg:block'>
             <div className="relative">
               <div className="w-8 h-8 z-50 relative rounded-full border-4 border-[#f3c351] bg-[#05070f] mx-auto mt-2"></div>
@@ -64,7 +64,7 @@ const IntroComp = () => {
           <span className='text-[#A5A7B5] text-lg px-2' style={divStyle1}>Exchange winnings for gift cards.</span>
         </div>
         <div className='text-white flex flex-col gap-y-3 items-center relative text-center md:items-center gap-1 lg:gap-x-0 p-3 lg:py-3 lg:px-0 '>
-          <img src="src\assets\images\hiw\Howitworks-Trophy.png" className='h-24 w-24' alt="Repeat" />
+          <img src="/images/hiw/Howitworks-Trophy.png" className='h-24 w-24' alt="Repeat" />
           <div className='w-full hidden lg:block'>
             <div className="relative">
               <div className="w-8 h-8 z-50 relative rounded-full border-4 border-[#f3c351] bg-[#05070f] mx-auto mt-2"></div>
